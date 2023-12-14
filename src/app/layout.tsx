@@ -21,7 +21,7 @@ export default function RootLayout({
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://brytelands.io">
-                        <img src="./favicon-32x32.png" width="32" height="32"/>
+                        <img src="./bryteschemes_logo_small_primary.png" width="130" height="40"/>
                     </a>
 
                     <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false"

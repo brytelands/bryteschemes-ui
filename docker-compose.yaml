@@ -1,0 +1,31 @@
+version: '3.7'
+
+networks:
+  bryteschemes:
+
+services:
+
+  bryteschemes-api:
+    image: brytelands/bryteschemes-api
+    tty: true
+#    environment:
+#      SOLOGGER_APP_CONFIG_LOC: /config/solalumin-listener-config.json
+#      RUST_BACKTRACE: 1
+    ports:
+      - "8080:8080"
+    networks:
+      - bryteschemes
+
+  bryteschemes-ui:
+    image: brytelands/bryteschemes-ui
+    tty: true
+#    environment:
+#      SOLOGGER_APP_CONFIG_LOC: /config/solalumin-listener-config.json
+#      RUST_BACKTRACE: 1
+    ports:
+      - "3000:3000"
+    depends_on:
+      bryteschemes-api:
+        condition: service_healthy
+    networks:
+      - bryteschemes

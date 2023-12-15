@@ -9,6 +9,8 @@ BryteSchemes UI is the front end for the BryteSchemes API. The current functiona
 
 Try it here: https://test.brytelands.io/
 
+[![Watch the demo](https://img.youtube.com/vi/0jN9Wz95tGA/hqdefault.jpg)](https://www.youtube.com/embed/0jN9Wz95tGA)
+
 ## Run
 
 ```shell
